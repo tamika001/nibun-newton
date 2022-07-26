@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <p>二分法とニュートン法</p>
+
+<form action="KonnbiniServlet" method="POST">
+  <input type="radio" name="item" value="nibun" checked="checked">nibun
+  <input type="radio" name="item" value="newton">newton
+<div id="contents">
+  <div id="panel">
+    <div>
+      <p>式</p>
+        <button type="button" id="start" class="normal">x^3+x-1</button>
+        <button type="button" id="start" class="normal">2x^2-3</button>
+    </div>
+
+
+<div>
+  <p>試行範囲</p>
+  <button type="button" id="b02" class="size">0≦x≦1</button>
+  <button type="button" id="b03" class="size">1≦x≦2</button>
+  
+</div>
+
+<div>
+  <p>誤差</p>
+    <button type="button" id="d02" class="size">0.01</button>
+    <button type="button" id="d03" class="size">0.001</button>
+    <br>
+    <button type="button" id="d04" class="size">0.00001</button>
+    <button type="button" id="d05" class="size">0.0000000001</button>
+</div>
+
+<p id="x2"></p>
+
+
+
+
+</form>
+<div id="main">
+  <div id="area1" class="area">
+    <p> 式</p>
+    document.write('<svg width=400 height=400>');
+      document.write('<line x1=0 y1=200 x2=400 y2=200 stroke="black" /><line x1=200 y1=0 x2=200 y2=400 stroke="black" />');
+      
+
+      document.write('</svg>');
+  </div>
+
+  
+</div>
+</div>
+</body>
+
+
+</html>
